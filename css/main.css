@@ -1,0 +1,298 @@
+/* 
+	Resume Bootstrap Sass Theme
+	Author: Tommy Jackson
+	Version
+*/
+/*
+BASE - Base Styles, Variable, mixins, etc 
+*/
+/*Text Colors*/
+/*Background Colors*/
+/*Images*/
+/* line 2, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_normalize.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*body {*/
+/* line 2, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body {
+  font-size: 12px;
+  position: relative;
+}
+
+/* line 6, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body h4, body h5, body h6, body p, body i, body ul, body li {
+  color: black;
+}
+
+/* line 9, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body h4 {
+  font-size: 3rem;
+}
+
+/* line 12, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body h5 {
+  font-size: 2.25rem;
+}
+
+/* line 15, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body h6 {
+  font-size: 1.5rem;
+}
+
+/* line 18, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body p {
+  font-size: 1.4rem;
+}
+
+/* line 22, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body i {
+  font-size: 1.4rem;
+}
+
+/* line 25, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
+body li {
+  font-size: 2rem;
+}
+
+/* MODULES - Individual site components */
+/*profile background*/
+/* line 6, /Users/thomasjackson/Desktop/OnlineResume/scss/modules/_background.scss */
+#profile {
+  background-image: url("http://carlosrull.com/wp-content/uploads/2013/06/macbookair_command_line.jpg");
+  background-color: #410972;
+  background-blend-mode: darken;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: centre;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*other backgrounds*/
+/* line 25, /Users/thomasjackson/Desktop/OnlineResume/scss/modules/_background.scss */
+.navbar {
+  background-color: black;
+}
+
+/* line 28, /Users/thomasjackson/Desktop/OnlineResume/scss/modules/_background.scss */
+#education {
+  background-color: orange;
+}
+
+/* line 32, /Users/thomasjackson/Desktop/OnlineResume/scss/modules/_background.scss */
+#skills, #experience {
+  background-color: white;
+}
+
+/* line 1, /Users/thomasjackson/Desktop/OnlineResume/scss/modules/_images.scss */
+#profilePic {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100%;
+  border: 1px #410972;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+
+/* LAYOUTS - Page layout styles */
+/* line 2, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_nav.scss */
+.navbar li {
+  font-size: 0.969rem;
+  text-align: center;
+}
+
+/* line 7, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_nav.scss */
+.navbar h4 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+/* line 1, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+#profile {
+  margin-bottom: 0;
+  padding-top: 50px;
+}
+
+/* line 9, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+#profile #profileDetails h1, #profile #profileDetails h2, #profile #profileDetails i, #profile #profileDetails p {
+  text-align: justify;
+  color: white;
+}
+
+/* line 14, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+#profile #profileDetails h1 {
+  font-size: 3rem;
+}
+
+/* line 18, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+#profile #profileDetails h2 {
+  font-size: 2rem;
+}
+
+/* line 22, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+#profile #profileDetails p {
+  font-size: 2rem;
+}
+
+/* line 27, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+#profile #contact {
+  padding-top: 65px;
+}
+
+/* line 31, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+#profile #contact .contact h4,
+#profile #contact .contact p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+/* line 1, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_skills.scss */
+#skills {
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+/* line 1, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_education.scss */
+#education {
+  padding-top: 60px;
+}
+
+/* line 3, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_education.scss */
+#education .section1 {
+  padding-bottom: 1.5px;
+}
+
+/* line 6, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_education.scss */
+#education .section2 {
+  padding-bottom: 0px;
+}
+
+/* line 1, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_experience.scss */
+#experience {
+  padding-top: 30px;
+}
+
+/* line 3, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_experience.scss */
+#experience .section1 {
+  padding-bottom: 1.5px;
+}
+
+/* line 6, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_experience.scss */
+#experience .section2 {
+  padding-bottom: 0px;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 3, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html {
+    font-size: 13px;
+  }
+  /* line 7, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html #profile #profileDetails #profilePic {
+    width: 110px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  /* line 19, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html {
+    font-size: 12px;
+  }
+  /* line 23, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html #profile #profileDetails #profilePic {
+    width: 120px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  /* line 35, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html {
+    font-size: 12px;
+  }
+  /* line 39, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html #profile #profileDetails #profilePic {
+    width: 130px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  /* line 50, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html {
+    font-size: 12px;
+  }
+  /* line 53, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html #profile {
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+  /* line 54, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html #profile #profileDetails #profilePic {
+    width: 140px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  /* line 64, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html {
+    font-size: 13px;
+  }
+  /* line 68, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html #profile #profileDetails #profilePic {
+    width: 140px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-width: 990px) {
+  /* line 77, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html html {
+    font-size: 13px;
+  }
+  /* line 80, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html html .navbar li {
+    text-align: center;
+  }
+  /* line 85, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html html #profile #profilePic {
+    width: 140px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=../css/main.map */
