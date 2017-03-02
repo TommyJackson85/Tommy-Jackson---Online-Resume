@@ -14,7 +14,7 @@ replace the %data% placeholder text you see in them.
 */
  
 /*1-About Section variables*/
-var HTMLbioPic = '<img src=%data% alt="..." id="profilePic" class="img-circle col-lg-6 col-md-6 col-sm-6 col-xs-6" />';
+var HTMLbioPic = '<img src=%data% alt="..." id="profilePic" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" />';
 var HTMLheaderName =  '<h1>%data%</h1>';
 var HTMLbirth = '<h2><i>D.O.B: %data% </i></h2>';
 var HTMLcurrentLocation = '<h2><i>Location: %data% </i></h2>';
