@@ -22,14 +22,15 @@ var HTMLabout = '<p>%data%</p>';
 /*END of About Section variables*/
 
 /*2-Contact variables for EACH contact*/
-var HTMLcontact = '<div class="contact col-lg-4 col-md-4 col-sm-4 col-xs-6"></div>';
-var HTMLcontactType = '<h4>%data%</h4>';
-var HTMLcontactData = '<p>%data%</p>';
+var HTMLcontact = '<div class="contact">%data%</div>';
+var HTMLlink = '<div class="page"><a href="%data%" class="link"></a></div>';
+var HTMLpageType = '<h4>%data%</h4>';
+//var HTMLpageData = '<p>%data%</p>';
 /*END of Contact variables*/
 
 /*3-Progress Bar variables*/
 /*--Combine the Three Variables to create each Progress Bar*/
-var HTMLbarChartData = '<div class="progress col-lg-10 col-lg-offset-1 col-md-10 col-sm-12 col-xs-12"><div class="progress-bar" role="progressbar" aria-valuenow="%data%" aria-valuemin="0" '; 
+var HTMLbarChartData = '<div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="progress-bar" role="progressbar" aria-valuenow="%data%" aria-valuemin="0" '; 
 var HTMLbarChartPercentage = 'aria-valuemax="100" style="width: %data%;">';
 var HTMLbarChartText = '%data%</div></div>';
 /*END of Progress Bar variables*/
@@ -37,10 +38,10 @@ var HTMLbarChartText = '%data%</div></div>';
 /*4-variables for BOTH Education and Projects.*/
 /*--Starting Variables*/
 var HTMLonlineEducation = '<div id="onlineEdu"><h5>Online Education</h5><ul id="onlineList"></ul></div>';
-var HTMLonlineListItem = '<li class="onlineListItem"><h6>%data%</h6>';
+var HTMLonlineListItem = '<li class="onlineListItem">%data%</li>';
 
 var HTMLotherEducation = '<div id="otherEdu"><h5>Other Education</h5><ul id="otherList"></ul></div>';
-var HTMLotherListItem = '<li class="otherListItem"><h6>%data%</h6>';
+var HTMLotherListItem = '<li class="otherListItem">%data%</li>';
 
 var HTMLprojects = '<div id="projects"><h5>Projects</h5><ul id="projectsList"></ul></div>';
 var HTMLprojectsListItem = '<li class="projectListItem"><h6>%data%</h6>';

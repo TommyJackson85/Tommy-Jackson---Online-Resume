@@ -1,9 +1,9 @@
 var bio = {
 "biopic" : "images/cvphoto.jpg",
 "name" : "Tommy Jackson",
-"birth" : "19 / 09 / 1985",
-"location" : "Cork, Ireland",
-"about" : "I am a Frontend Developer who practices JavaScript everyday. I am always continuing to learn new code and frameworks. I am also currently working for Apple Computers at their European Headquarters, testing their iMacs hardware. I also Enjoy going to the cinema, reading, photography, screenwriting swimming and cycling.",
+"birth" : "19/09/1985",
+"location" : "Perth, Australia",
+"about" : `I am a <strong>Frontend Developer</strong> who practices JavaScript everyday. I'm also learning Angular 4, Node JS and the Mean stack and I am enrolled in Free Code Camp's full stack course. Much of my past work experience and education has allowed me to inherit skills in project management, team-work and communications. My hobbies and interests include cinema, reading, photography, screenwriting, swimming and cycling.`,
 } ;
 
 
@@ -28,35 +28,37 @@ $("#profileDetails").append(formattedAbout);
 
 
 var contacts = {
-	"contactList" : [
-		{"type" : "Phone",
-		"data" : "xxx xxx xxxx"},
-		{"type" : "Email",
-		"data" : "tom.jackson50@gmail.com"},
-		{"type" : "LinkedIn",
-		"data" : "xxxxxxxxxxx"},
-		{"type" : "Skype",
-		"data" : "xxxxxxx"},
-		{"type" : "Facebook",
-		"data" : "xxxxxxxxx"},
-		{"type" : "Twitter",
-		"data" : "xxx xxx xxx"},
-				]
-			};
+	"phone" : "<h4><i class='fa fa-phone' aria-hidden='true'></i>	<i>xxx xxx xxxx</i></h4>",
+	"email" : "<h4><i class='fa fa-envelope' aria-hidden='true'></i>	<i>tom.jackson50@gmail.com<i/></h4>",
+	"internetPage" : [
+		{"type" : " <i class='fa fa-linkedin-square' aria-hidden='true'></i>",
+		"link" : "https://www.linkedin.com/in/tommy-jackson-bb21b66b/"},
+		{"type" : "<i class='fa fa-google-plus-official' aria-hidden='true'></i>",
+		"link" : "https://plus.google.com/u/0/110016559790020821468"},
+		{"type" : "<i class='fa fa-twitter-square' aria-hidden='true'></i>",
+		"link" : ""},
+				]};
 
 			function displayContacts () {
-for (Contact in contacts.contactList) { 
+var formattedPhone = HTMLcontact.replace('%data%', contacts.phone);
+var formattedEmail = HTMLcontact.replace('%data%', contacts.email);
+$("#contact").append(formattedPhone);
+$("#contact").append(formattedEmail);
 
-$("#contact").append(HTMLcontact);
-console.log(HTMLcontact);
+for (Page in contacts.internetPage) { 
 
-var formattedContactType = HTMLcontactType.replace("%data%", contacts.contactList[Contact].type);
-$(".contact:last").append(formattedContactType);
-console.log(formattedContactType);
+var formattedLink = HTMLlink.replace("%data%", contacts.internetPage[Page].link);
 
-var formattedContactData = HTMLcontactData.replace("%data%", contacts.contactList[Contact].data);
+$("#contact").append(formattedLink);
+console.log(HTMLlink);
+
+var formattedPageType = HTMLpageType.replace("%data%", contacts.internetPage[Page].type);
+$(".link:last").append(formattedPageType);
+console.log(formattedPageType);
+
+/*var formattedContactData = HTMLcontactData.replace("%data%", contacts.internetProfiles[Contact].data);
 $(".contact:last").append(formattedContactData);
-console.log(formattedContactData);
+console.log(formattedContactData);*/
 
 }
 }
@@ -64,19 +66,19 @@ displayContacts ()
 
 var progressChart = {
 	"skills": [{
-		"text": "Javascript Basics (70%)",
-		"data": 70,
-		"percentage": "70%"},
+		"text": "Javascript (85%)",
+		"data": 85,
+		"percentage": "85%"},
+		{
+		"text": "Angular 2 (20%)",
+		"data": 20,
+		"percentage": "20%"},
+		{
+		"text": "Node JS (20%)",
+		"data": 20,
+		"percentage": "20%"},
 		{
 		"text": "JQuery (70%)",
-		"data": 70,
-		"percentage": "70%"},
-		{
-		"text": "Angular JS (70%)",
-		"data": 70,
-		"percentage": "70%"},
-		{
-		"text": "React JS (70%)",
 		"data": 70,
 		"percentage": "70%"},
 		{
@@ -84,17 +86,17 @@ var progressChart = {
 		"data": 50,
 		"percentage": "50%"},
 		{
-		"text": "Bootstrap (60%)",
-		"data": 60,
-		"percentage": "60%"},
+		"text": "Bootstrap (100%)",
+		"data": 100,
+		"percentage": "100%"},
 		{
-		"text": "HTML5 (60%)",
-		"data": 60,
-		"percentage": "60%"},
+		"text": "HTML5 (100%)",
+		"data": 100,
+		"percentage": "100%"},
 		{
-		"text": "CSS3 (60%)",
-		"data": 60,
-		"percentage": "60%"},
+		"text": "CSS3 (100%)",
+		"data": 100,
+		"percentage": "100%"},
 		]
 	}
 
@@ -119,31 +121,23 @@ console.log(formattedBarChartFull);
 
 displayChart();
 
-
-
-
 var education = {
 	"online": [
+		{"company": "Udemy",
+		"detail": "Currently enrolled in 'Angula 2 and 4', 'Node JS' and 'The MEAN Stack' tutorials "
+		},
 		{
 		"company": "Free Code Camp",
-		"detail": "Currently Enroled"},
+		"detail": "Currently Enroled in "},
 		{
 		"company": "Team Tree House",
 		"detail": "Covered JavaScript Basics and Bootstrap video tutorials."},
-		{
-		"company": "Codeaccademy",
-		"detail": "Covered HTML5 and CSS tutorials."}
 		],
 
 	"other": [
 		{
 		"company": "University College Cork, Ireland",
-		"detail": "Received a Second Class Honours, Grade 1 BA Degree. Majored in Geography and Study of Religions."},
-		
-		{
-		"company": "University College Cork, Ireland",
-		"detail": "Received a Second Class Honours, Grade 1 BA Degree. Majored in Geography and Study of Religions."},
-
+		"detail": "Received a Second Class Honours, Grade 1 BA Degree. Majored in Geography and Study of Religions. Worked with GIS technology such as ArcGIS for my disertation and other projects"},
 		{
 		"company": "European Computer Drivers License Certificate (2013)",
 		"detail": ""}
@@ -174,15 +168,14 @@ $("#educationList").append(HTMLotherEducation);
 
 }
 	displayEducation ()
-
 	 var experience = {
 	"projects": [
+		{"project" : "<a href='https://github.com/TommyJackson85'><h6><i class='fa fa-github' aria-hidden='true'></i> Github page</h6></a>",
+		"detail" : "Collection of projects."},
 		{
-		"project": "Free Code Camp",
-		"detail": "Currently Enroled"}
+		"project": "<a href='https://codepen.io/ThomasJ85/collections/popular/'><h6><i class='fa fa-codepen' aria-hidden='true'></i>  Codepen page</h6></a>",
+		"detail": "Collection of projects and examples of code."}
 		],
-		
-
 	"work": [
 		{
 		"role": "Quality Control - General Operative.",

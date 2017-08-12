@@ -1,5 +1,5 @@
   .navbar {
-        li{
+        a, i{
     font-size: 0.969rem;
     text-align: center;
         }
@@ -8,3 +8,6 @@
       font-size: 1.4rem;
      margin-top: 10px;}
       }
+      nav{
+      padding:0px 0px 0px 5px;
+  }
