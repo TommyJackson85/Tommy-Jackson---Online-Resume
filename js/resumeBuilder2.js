@@ -70,7 +70,7 @@ var progressChart = {
 		"data": 85,
 		"percentage": "85%"},
 		{
-		"text": "Angular 2 (20%)",
+		"text": "Angular 4 (20%)",
 		"data": 20,
 		"percentage": "20%"},
 		{

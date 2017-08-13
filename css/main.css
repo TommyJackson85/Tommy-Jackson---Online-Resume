@@ -29,7 +29,7 @@ body h1, body h4, body h5, body h6, body p, body i, body ul, body li {
 
 /* line 9, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
 body h1 {
-  font-size: 10rem;
+  font-size: 3rem;
 }
 
 /* line 11, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
@@ -44,17 +44,17 @@ body h5 {
 
 /* line 17, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
 body h6 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 /* line 20, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
 body p {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 /* line 24, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
 body i {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 /* line 27, /Users/thomasjackson/Desktop/OnlineResume/scss/base/_base.scss */
@@ -136,48 +136,38 @@ nav {
   color: white;
 }
 
-/* line 12, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
-#profile #profileDetails h2, #profile #profileDetails i, #profile #profileDetails p {
-  font-size: 2rem;
-}
-
-/* line 14, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
-#profile #profileDetails h1 {
-  font-size: 3rem;
-}
-
-/* line 17, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+/* line 13, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
 #profile #contact {
   padding: 5px 0px 0px 20px;
 }
 
-/* line 21, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+/* line 17, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
 #profile #contact .contact h4, #profile #contact .contact p, #profile #contact .contact i {
   color: #2ecc71;
   font-size: 2rem;
 }
 
-/* line 26, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+/* line 22, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
 #profile #contact .page {
   float: left;
   width: 110px;
   margin: 0px 1px 0px 0px;
 }
 
-/* line 27, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+/* line 23, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
 #profile #contact .page i {
   color: #e74c3c;
   font-size: 3rem;
 }
 
-/* line 31, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
+/* line 27, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_profile.scss */
 #profile #contact .page i:hover {
   color: #3498db;
 }
 
 /* line 1, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_skills.scss */
 #skills {
-  padding: 60px 30px 60px 30px;
+  padding: 60px 0px 60px 0px;
   margin-bottom: 0px;
 }
 
@@ -236,8 +226,8 @@ nav {
   }
   /* line 21, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
   html #profile #profileDetails #profilePic {
-    width: 90px;
-    margin: 10px 15px 0px 0px;
+    width: 100px;
+    margin: 20px 15px 0px 0px;
   }
 }
 
@@ -292,21 +282,28 @@ nav {
   }
 }
 
+@media screen and (min-width: 720px) and (min-width: 768px) {
+  /* line 77, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  html html #skills {
+    padding: 60px 0px 60px 0px;
+  }
+}
+
 @media screen and (min-width: 720px) and (min-width: 990px) {
-  /* line 76, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  /* line 84, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
   html html {
     font-size: 13px;
   }
-  /* line 79, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  /* line 87, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
   html html .navbar li {
     text-align: center;
   }
-  /* line 84, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  /* line 92, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
   html html #profile #profilePic {
     width: 140px;
     margin-top: 0px 0px 0px 0px;
   }
-  /* line 90, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
+  /* line 98, /Users/thomasjackson/Desktop/OnlineResume/scss/layouts/_mediaQueries.scss */
   html html #skills {
     padding: 60px 100px 60px 100px;
   }

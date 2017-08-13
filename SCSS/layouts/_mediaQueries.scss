@@ -19,8 +19,8 @@
     
     #profile{#profileDetails{
        #profilePic {
-       width: 90px;
-        margin: 10px 15px 0px 0px;
+       width: 100px;
+        margin: 20px 15px 0px 0px;
        }}
     }
   }
@@ -70,6 +70,14 @@
       #profilePic {width: 140px;
         margin: 20px 25px 0px 0px;
       }}
+    }
+
+@media screen and (min-width: 768px) {
+  html {
+    #skills{
+       padding: 60px 0px 60px 0px;
+    }
+  }
     }
 
 @media screen and (min-width: 990px) {

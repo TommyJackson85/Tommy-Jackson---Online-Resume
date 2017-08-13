@@ -30,7 +30,7 @@ var HTMLpageType = '<h4>%data%</h4>';
 
 /*3-Progress Bar variables*/
 /*--Combine the Three Variables to create each Progress Bar*/
-var HTMLbarChartData = '<div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="progress-bar" role="progressbar" aria-valuenow="%data%" aria-valuemin="0" '; 
+var HTMLbarChartData = '<div class="progress col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><div class="progress-bar" role="progressbar" aria-valuenow="%data%" aria-valuemin="0" '; 
 var HTMLbarChartPercentage = 'aria-valuemax="100" style="width: %data%;">';
 var HTMLbarChartText = '%data%</div></div>';
 /*END of Progress Bar variables*/
