@@ -7,16 +7,11 @@
 BASE - Base Styles, Variable, mixins, etc 
 */
 @import 'base/_variables.scss';
-@import 'base/_mixins.scss';
-@import 'base/_normalize.scss';
 @import 'base/_base.scss';
 
 /* MODULES - Individual site components */
-@import 'modules/_typography.scss';
-@import 'modules/_buttons.scss';
 @import 'modules/_background.scss';
 @import 'modules/_images.scss';
-@import 'modules/_bars.scss';
 
 /* LAYOUTS - Page layout styles */
 

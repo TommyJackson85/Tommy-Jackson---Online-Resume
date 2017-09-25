@@ -1,18 +1,4 @@
 
-@media (min-width: 320px) { 
-
-}
-@media (min-width: 360px) { 
-
-}
-@media (min-width: 375px) { 
-
-}
-@media (min-width: 412px) { 
-
-}
-
-
 @media screen and (min-width: 500px) {
   html {
     font-size: 12px;
@@ -28,8 +14,6 @@
 
 @media screen and (min-width: 570px) {
   html {
-    font-size: 12px;
-    
      #profile{#profileDetails{
       #profilePic {
       width: 120px;
@@ -41,8 +25,6 @@
 
 @media screen and (min-width: 620px) {
   html {
-    font-size: 12px;
-    
      #profile{#profileDetails{
       #profilePic {width: 130px;
         margin: 20px 20px 0px 0px;
@@ -53,8 +35,6 @@
 
 @media screen and (min-width: 680px) {
   html {
-    font-size: 12px;
-    
     #profile{#profileDetails{
       #profilePic {width: 140px;}}
      margin: 20px 30px 0px 0px;
@@ -64,8 +44,6 @@
 
 @media screen and (min-width: 720px) {
   html {
-    font-size: 13px;
-    
     #profile{#profileDetails{
       #profilePic {width: 140px;
         margin: 20px 25px 0px 0px;
@@ -74,6 +52,7 @@
 
 @media screen and (min-width: 768px) {
   html {
+    font-size:13px;
     #skills{
        padding: 60px 0px 60px 0px;
     }
@@ -82,7 +61,6 @@
 
 @media screen and (min-width: 990px) {
   html {
-    font-size: 13px;
     .navbar {
         li{
     text-align: center;

@@ -1,25 +1,22 @@
 #profile {
-    margin-bottom: 0;
-    padding-top: 60px;
-
+    margin: 0px 0px 0px 0px;
+    padding: 60px 0px 60px 0px;
     #profileDetails {
      h1, h2, i, p {
     text-align: justify;
-         color: $primary-color-text;
-
+         color: $white-color-text;
       }  
     }
-
          #contact {
         padding: 5px 0px 0px 20px;
          
          .contact {
             h4, p, i {
-            color: $second-color-text;
+            color: $green-color-text;
             font-size: 2rem;}
          }
 
-        .page {
+        .pageIcon {
             i {
             color: $link-color-text;
             font-size: 3rem;}
